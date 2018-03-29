@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <script src="/js/main_script.js"></script>
+    <!--BootStrap Scripts-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Google IT!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+        <div class="row">
+          <img src="images/logo.png" alt="GoogleItLogo" style="margin:auto; max-width:50%; display:block;">
+        </div>
+        <div class="row">
+          <form action="create_team.php" method="post" onsubmit="return validateForm(this)" style="margin:auto; width:50%; display:block;">
+            <div class="form-group">
+              <label for="teamName">Team Name:</label>
+              <input type="text" class="form-control" placeholder="Enter Team Name" name="teamname">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" name="password">
+            </div>
+            <button type="submit" class="btn btn-danger" value="Sign Up"  style="margin:auto; width:50%; display:block;"><h4>Login</h4></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
